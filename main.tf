@@ -52,47 +52,6 @@ resource "google_compute_instance" "instance" {
     access_config {
       // Ephemeral IP
     }
-  }
-
-  metadata_startup_script = <<-EOF
-      #cloud-config
-      packages:
-        - apache2
-
-      write_files:
-        - path: /var/www/html/index.html
-          content: |
-            <html>
-            <head>
-              <title>Práctica IAC en Terpel</title>
-              <style>
-                body {
-                  background-color: #ffffff;
-                  font-family: Arial, sans-serif;
-                  text-align: center;
-                  margin-top: 100px;
-                }
-                .logo {
-                  width: 300px;
-                  height: 92px;
-                  background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  margin: 0 auto;
-                }
-                .innovador {
-                  font-size: 24px;
-                  color: #555555;
-                  margin-top: 20px;
-                }
-              </style>
-            </head>
-            <body>
-              <div class="logo"></div>
-              <h1>Práctica IAC en Terpel</h1>
-              <p class="innovador">con un diseño innovador y original</p>
-            </body>
-            </html>
-    EOF
+  }               
 
 }
