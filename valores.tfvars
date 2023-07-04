@@ -1,0 +1,7 @@
+project_id    = "elegant-zodiac-391800"
+region        = "us-central1"
+network_name  = "my-network"
+subnetwork_name = "my-subnetwork"
+firewall_name = "allow-http-ssh"
+instance_name = "instancia-practica-terpeñ"
+bucket_name   = "state-practica"
