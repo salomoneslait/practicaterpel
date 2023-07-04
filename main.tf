@@ -54,7 +54,7 @@ resource "google_compute_instance" "instance" {
     }
   }
 
-  user-data = <<-EOF
+  metadata_startup_script = <<-EOF
       #cloud-config
       packages:
         - apache2
